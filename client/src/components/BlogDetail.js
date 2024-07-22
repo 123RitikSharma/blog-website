@@ -21,7 +21,7 @@ function BlogDetail() {
 
   const fetchDetails = async () => {
     const res = await axios
-      .get(`http://localhost:8000/api/blog/${id}`)
+      .get(`https://blog-website-api-gs8f.onrender.com/api/blog/${id}`)
       .catch((err) => console.log(err));
 
     const data = res.data;
