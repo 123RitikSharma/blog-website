@@ -25,7 +25,7 @@ const Blog = ({ title, content, image, userName, isUser, id }) => {
 
   const deleteRequest = async () => {
     try {
-      const res = await axios.delete(`http://localhost:8000/api/blog/${id}`);
+      const res = await axios.delete(`https://blog-website-api-gs8f.onrender.com/api/blog/${id}`);
       const data = res.data;
       return data;
     } catch (error) {
